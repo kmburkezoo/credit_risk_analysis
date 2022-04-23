@@ -1,7 +1,7 @@
 # credit_risk_analysis
 
 ## Overview
-The purpose of this analysis is to use supervised machine learning to predict the riskiness of loans based on a variety of input features. Because the data set is severely imbalanced, a variety of oversampling, undersampling, and combination techniques are explored. Ultimately, none is particularly effective at accurate high-risk loans.
+The purpose of this analysis is to use supervised machine learning to predict the riskiness of loans based on a variety of input features. Because the dataset is severely imbalanced, a variety of oversampling, undersampling, and combination techniques are explored. Ultimately, none is particularly effective at accurately identifying high-risk loans.
 
 ## Results
 
@@ -31,7 +31,7 @@ The purpose of this analysis is to use supervised machine learning to predict th
     ![Easy Ensemble](Images/ee_cr.png)
 
 ## Summary
-With a balanced accuracy score of 93.2%, Easy Ensemble AdaBoost is by far the best of the models explored in this analysis. However, it is not a *good* model for the data analyzed here, only the best of a bad bunch. Its balanced accuracy score may be over 90%, as is its recall for both high-risk and low-risk loans; however, its precision in identifying high-risk loans is only 9%. If the intent is to use these algorithms to do an initial pass-through of loans to approve, with a more selective secondary test used to distinguish between high-risk and those not immediately identified as such, both Balanced Random Forest and Easy Ensemble AdaBoost would do quite well:
+With a balanced accuracy score of 93.2%, Easy Ensemble AdaBoost is by far the best of the models explored in this analysis. However, it is not a *good* model for the data analyzed here, only the best of a bad bunch. Its balanced accuracy score may be over 90%, as is its recall for both high-risk and low-risk loans; however, its precision in identifying high-risk loans is only 9%. If the intent is to use these algorithms to do an initial pass-through of loans to approve, with a more selective secondary test used to distinguish between the truly high-risk and those not cleared as low risk on the first pass, both Balanced Random Forest and Easy Ensemble AdaBoost would do quite well:
 |Measure|BRF|EE AB|
 |---|---|---|
 |Acc Score|.786|.932|
